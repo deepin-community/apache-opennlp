@@ -1,5 +1,152 @@
-template-repository (1.0-1) unstable; urgency=medium
+apache-opennlp (2.5.3-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 2.5.3
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Andrius Merkys <merkys@debian.org>  Mon, 13 Jan 2025 06:59:47 -0500
+
+apache-opennlp (2.5.2-1) unstable; urgency=medium
+
+  * New upstream version 2.5.2
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 07 Jan 2025 02:54:20 -0500
+
+apache-opennlp (2.5.1-1) unstable; urgency=medium
+
+  * New upstream version 2.5.1
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 16 Dec 2024 05:08:37 -0500
+
+apache-opennlp (2.5.0-1) unstable; urgency=medium
+
+  * New upstream version 2.5.0
+  * Add copyright entry for opennlp-docs/src/docbkx/images/opennlp-logo.png.
+  * Disable tests (Closes: #1086353)
+
+ -- Andrius Merkys <merkys@debian.org>  Fri, 15 Nov 2024 11:17:08 -0500
+
+apache-opennlp (2.4.0-1) unstable; urgency=medium
+
+  * New upstream version 2.4.0
+
+ -- Andrius Merkys <merkys@debian.org>  Thu, 12 Sep 2024 04:11:24 -0400
+
+apache-opennlp (2.3.3-1) unstable; urgency=medium
+
+  * New upstream version 2.3.3
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 30 Apr 2024 02:04:35 -0400
+
+apache-opennlp (2.3.2-1) unstable; urgency=medium
+
+  * New upstream version 2.3.2
+  * Ignore the new POM, update debian/todo.
+
+ -- Andrius Merkys <merkys@debian.org>  Wed, 07 Feb 2024 01:58:20 -0500
+
+apache-opennlp (2.3.1-2) unstable; urgency=medium
+
+  * Adjust debian/watch to upstream changes.
+  * Bump copyright years.
+
+ -- Andrius Merkys <merkys@debian.org>  Thu, 18 Jan 2024 03:31:55 -0500
+
+apache-opennlp (2.3.1-1) unstable; urgency=medium
+
+  * New upstream version 2.3.1
+  * Update debian/upstream/signing-key.asc.
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 04 Dec 2023 08:37:14 -0500
+
+apache-opennlp (2.3.0-1) unstable; urgency=medium
+
+  * New upstream version 2.3.0
+  * Update debian/upstream/signing-key.asc.
+  * Re-export upstream signing key without extra signatures.
+  * Refresh patches.
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 07 Aug 2023 05:57:39 -0400
+
+apache-opennlp (2.2.0-1) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Set upstream metadata fields: Repository.
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 03 Jul 2023 10:35:44 -0400
+
+apache-opennlp (2.2.0-1~exp) experimental; urgency=medium
+
+  * New upstream version 2.2.0
+  * Update copyright years.
+  * Bump debhelper from old 12 to 13.
+  * Re-export upstream signing key without extra signatures.
+  * Set upstream metadata fields: Bug-Database, Repository-Browse.
+  * Update standards version to 4.6.2, no changes needed.
+  * Disable opennlp-uima for now because of #1038639.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 20 Jun 2023 02:37:02 -0400
+
+apache-opennlp (2.1.0-1) unstable; urgency=medium
+
+  * New upstream version 2.1.0
+  * Refresh javadoc-set-source.patch.
+  * Refresh copyright years.
+
+ -- Andrius Merkys <merkys@debian.org>  Fri, 25 Nov 2022 05:32:29 -0500
+
+apache-opennlp (2.0.0-2) unstable; urgency=medium
+
+  * Remove parent link from main POM (Closes: #1022416)
+  * Package opennlp-morfologik-addon.
+  * Run tests.
+  * Simplify debian/rules.
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 24 Oct 2022 02:47:53 -0400
+
+apache-opennlp (2.0.0-1) unstable; urgency=medium
+
+  * New upstream version 2.0.0
+  * Ignore opennlp-dl due to unpackaged dependencies.
+  * Add two more items to debian/copyright.
+  * Bump copyright years.
+
+ -- Andrius Merkys <merkys@debian.org>  Thu, 16 Jun 2022 02:23:30 -0400
+
+apache-opennlp (1.9.4-1) unstable; urgency=medium
+
+  * New upstream version 1.9.4
+  * Refreshing patches.
+  * Forwarding opennlp-wrapper.patch is not needed.
+  * Updating copyright years.
+  * Updating my email.
+  * Ignoring mockito-core.
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 08 Nov 2021 02:58:44 -0500
+
+apache-opennlp (1.9.3-1) unstable; urgency=medium
+
+  * New upstream version 1.9.3
+  * Simplifying javadoc-set-source.patch.
+  * Adjusting copyright years. Relicensing debian/* under Apache-2.0.
+  * Wrapping and sorting.
+  * Switching to debhelper-compat dependency.
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 10 Aug 2020 01:41:21 -0400
+
+apache-opennlp (1.9.2-1) unstable; urgency=medium
+
+  * New upstream version 1.9.2
+
+ -- Andrius Merkys <merkys@debian.org>  Fri, 24 Jan 2020 09:46:28 -0500
+
+apache-opennlp (1.9.1-2) unstable; urgency=medium
+
+  * Updating my e-mail.
+  * Bumping debhelper version.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 20 Aug 2019 05:36:29 -0400
+
+apache-opennlp (1.9.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #909501)
+
+ -- Andrius Merkys <andrius.merkys@gmail.com>  Mon, 04 Feb 2019 08:04:27 -0500

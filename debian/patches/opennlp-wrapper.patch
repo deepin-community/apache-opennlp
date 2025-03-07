@@ -1,0 +1,23 @@
+Description: adapting CLI wrapper to Debian layout.
+Author: Andrius Merkys <merkys@debian.org>
+Forwarded: not-needed
+--- a/opennlp-distr/src/main/bin/opennlp
++++ b/opennlp-distr/src/main/bin/opennlp
+@@ -39,7 +39,7 @@
+ OPENNLP_HOME=$(dirname "$PRG")/..
+ 
+ # make it fully qualified
+-OPENNLP_HOME=$(cd "$OPENNLP_HOME" && pwd)
++OPENNLP_HOME=/usr/share/java
+ 
+ cd "$saveddir" || exit
+ 
+@@ -51,7 +51,7 @@
+   fi
+ fi
+ 
+-CLASSPATH=$(echo "$OPENNLP_HOME"/lib/*.jar | tr ' ' ':')
++CLASSPATH=$(echo "$OPENNLP_HOME"/opennlp-*.jar | tr ' ' ':')
+ 
+ unset HEAP
+ if [ -n "$JAVA_HEAP" ] ; then

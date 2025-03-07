@@ -1,0 +1,14 @@
+Description: setting source version for maven-javadoc-plugin to avoid
+ "The code being documented uses modules but the packages defined in ... are
+ in the unnamed module" exception.
+Author: Andrius Merkys <merkys@debian.org>
+--- a/opennlp-tools/pom.xml
++++ b/opennlp-tools/pom.xml
+@@ -110,6 +110,7 @@
+         <artifactId>maven-javadoc-plugin</artifactId>
+         <configuration>
+           <excludePackageNames>opennlp.tools.cmdline</excludePackageNames>
++          <source>${java.version}</source>
+         </configuration>
+         <executions>
+           <execution>

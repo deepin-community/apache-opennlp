@@ -1,0 +1,3 @@
+javadoc-set-source.patch
+opennlp-wrapper.patch
+no-network-tests.patch
