@@ -1,0 +1,9 @@
+* Package the remaining components of the source:
+
+  * opennlp-distr
+  * opennlp-dl
+  * opennlp-dl-gpu
+  * opennlp-docs
+  * opennlp-uima
+
+* Enable tests

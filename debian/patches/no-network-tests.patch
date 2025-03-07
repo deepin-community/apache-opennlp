@@ -1,0 +1,20 @@
+--- a/opennlp-tools/src/test/java/opennlp/tools/EnabledWhenCDNAvailable.java
++++ b/opennlp-tools/src/test/java/opennlp/tools/EnabledWhenCDNAvailable.java
+@@ -46,6 +46,9 @@
+ 
+     @Override
+     public ConditionEvaluationResult evaluateExecutionCondition(ExtensionContext context) {
++      return ConditionEvaluationResult.disabled("Resource (CDN) disabled.");
++
++      /*
+       final var optional = findAnnotation(context.getElement(), EnabledWhenCDNAvailable.class);
+       if (optional.isPresent()) {
+         final EnabledWhenCDNAvailable annotation = optional.get();
+@@ -59,6 +62,7 @@
+         }
+       }
+       return ConditionEvaluationResult.enabled("Nothing annotated with DisabledWhenOffline.");
++      */
+     }
+   }
+ 

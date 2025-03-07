@@ -1,4 +1,24 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/pkg-info.mk
+
+OPENNLP_MAVEN_DIR = debian/maven-repo/org/apache/opennlp/opennlp-tools/debian
+
 %:
 	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure
+	mkdir --parents ${OPENNLP_MAVEN_DIR}
+	test -e ${OPENNLP_MAVEN_DIR}/opennlp-tools-debian.pom || \
+		ln -s ../../../../../../../opennlp-tools/pom.xml \
+		${OPENNLP_MAVEN_DIR}/opennlp-tools-debian.pom
+	test -e ${OPENNLP_MAVEN_DIR}/opennlp-tools-debian.jar || \
+		ln -s ../../../../../../../opennlp-tools/target/opennlp-tools-$(DEB_VERSION_UPSTREAM).jar \
+		${OPENNLP_MAVEN_DIR}/opennlp-tools-debian.jar
+
+override_dh_installman:
+	help2man debian/bin/opennlp --section=1 --no-info --no-discard-stderr \
+		--version-string=$(DEB_VERSION_UPSTREAM) \
+		--name='CLI interface to Apache OpenNLP' > debian/opennlp.1
+	dh_installman

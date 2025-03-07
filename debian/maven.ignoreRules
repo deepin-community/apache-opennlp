@@ -1,0 +1,13 @@
+de.thetaphi forbiddenapis * * * *
+org.apache.maven.plugins maven-checkstyle-plugin * * * *
+org.apache.maven.plugins maven-eclipse-plugin * * * *
+org.apache.maven.plugins maven-failsafe-plugin * * * *
+org.apache.maven.plugins maven-release-plugin * * * *
+org.apache.opennlp opennlp-tools test-jar * * *
+org.apache.rat apache-rat-plugin * * * *
+org.eluder.coveralls coveralls-maven-plugin * * * *
+org.glassfish.jersey.containers jersey-container-grizzly2-http * * * *
+org.glassfish.jersey.media jersey-media-json-jackson * * * *
+com.agilejava.docbkx docbkx-maven-plugin * * * *
+com.ruleoftech markdown-page-generator-plugin * * * *
+io.github.hakky54 logcaptor * * * *

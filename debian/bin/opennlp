@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# This script runs OpenNLP command line from the build directory in order
+# to extract its help message for help2man manpage translator.
+
+java -cp debian/libapache-opennlp-java/usr/share/java/opennlp-tools.jar:/usr/share/java/slf4j-api.jar:/usr/share/java/slf4j-simple.jar opennlp.tools.cmdline.CLI
