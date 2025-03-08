@@ -1,3 +1,4 @@
 javadoc-set-source.patch
 opennlp-wrapper.patch
 no-network-tests.patch
+0001-fix-encoding-US-ASCII-error.patch

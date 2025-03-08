@@ -1,0 +1,27 @@
+From 3b2045e6c8d8b64dd61792a48896443587a9965a Mon Sep 17 00:00:00 2001
+From: lhdjply <lhdjply@126.com>
+Date: Sat, 8 Mar 2025 12:06:04 +0800
+Subject: [PATCH] fix encoding US-ASCII error
+
+Signed-off-by: lhdjply <lhdjply@126.com>
+---
+ pom.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/pom.xml b/pom.xml
+index 61e1788..2c8adca 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -181,7 +181,8 @@
+ 		<logcaptor.version>2.10.0</logcaptor.version>
+ 		<jmh.version>1.37</jmh.version>
+ 		<classgraph.version>4.8.179</classgraph.version>
+-
++		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+ 
+ 		<opennlp.models.version>1.2.0</opennlp.models.version>
+ 		<opennlp.forkCount>1.0C</opennlp.forkCount>
+-- 
+2.45.2
+
